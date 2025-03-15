@@ -9,5 +9,5 @@ export default {
   },
   managerHead: (head) =>
     `${head}
-<link rel="shortcut icon" href="../public/favicon.ico" type="image/ico">`,
+<link rel="shortcut icon" href="./favicon.ico" type="image/ico">`,
 } satisfies StorybookConfig;
