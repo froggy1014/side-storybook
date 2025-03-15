@@ -10,8 +10,9 @@
     "lint": "pnpm /^lint:.*/",
     "lint:biome": "biome lint --write",
     "lint:eslint": "eslint --fix",
-    "build:storybook": "storybook build public",
     "dev:storybook": "storybook dev -p 6006 public",
+    "build:storybook": "storybook build public",
+    "serve:storybook": "serve storybook-static",
     "create:component": "tsx scripts/createComponent.ts create",
     "test": "vitest"
   },
@@ -62,8 +63,14 @@
   },
   "packageManager": "pnpm@9.7.1",
   "lint-staged": {
-    "*.{ts,tsx}": ["pnpm format", "pnpm lint"],
-    "*.{json,css,js}": ["pnpm format:biome", "pnpm lint:biome"]
+    "*.{ts,tsx}": [
+      "pnpm format",
+      "pnpm lint"
+    ],
+    "*.{json,css,js}": [
+      "pnpm format:biome",
+      "pnpm lint:biome"
+    ]
   },
   "config": {
     "commitizen": {
