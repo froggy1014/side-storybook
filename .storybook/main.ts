@@ -7,6 +7,7 @@ export default {
     name: '@storybook/react-vite',
     options: {},
   },
+  staticDirs: ['../public'],
   managerHead: (head) =>
     `${head}
 <link rel="shortcut icon" href="../public/assets/favicon.ico" type="image/ico">`,
