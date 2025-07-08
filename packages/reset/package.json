@@ -15,10 +15,10 @@
   "files": ["dist"],
   "scripts": {
     "build": "tsup",
-    "lint:biome": "pnpm exec biome lint",
-    "lint:eslint": "pnpm exec eslint",
+    "lint": "pnpm exec biome lint",
     "test": "vitest",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "clean": "rm -rf node_modules dist"
   },
   "dependencies": {},
   "devDependencies": {
